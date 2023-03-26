@@ -1,12 +1,23 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
+import Confetti from './components/confetti/confetti';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Confetti
+        position={[window.innerWidth / 2, window.innerHeight]}
+        enableCollisions={true}
+        airFriction={0.04}
+        velocity={29}
+        angularVelocity={0.6}
+        angle={-90}
+        spread={20}
+        volatility={0.75}
+        duration={6000}
+        concentration={20}
+      />
+    </div>
+  );
 }
 
 export default App;
