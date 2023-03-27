@@ -29,7 +29,7 @@ export default function usePhysicsEngine(ref: RefObject<HTMLCanvasElement>) {
 
     setEngine(engine);
     setRenderer(renderer);
-  }, []);
+  }, [ref]);
 
   return { engine, renderer };
 }

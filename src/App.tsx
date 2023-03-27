@@ -5,16 +5,16 @@ function App() {
   return (
     <div className="App">
       <Confetti
-        position={[window.innerWidth / 2, window.innerHeight]}
-        enableCollisions={true}
+        position={[window.innerWidth, window.innerHeight]}
+        enableCollisions={false}
         airFriction={0.04}
         velocity={29}
         angularVelocity={0.6}
-        angle={-90}
+        angle={-135}
         spread={20}
         volatility={0.75}
-        duration={6000}
-        concentration={20}
+        duration={10e3}
+        concentration={25}
       />
     </div>
   );
