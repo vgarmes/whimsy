@@ -1,6 +1,3 @@
-export const random = (min: number, max: number) =>
-  Math.random() * (max - min) + min;
-
 export const normalize = (
   currentNumber: number,
   currentScaleMin: number,
@@ -13,6 +10,9 @@ export const normalize = (
 
   return (newScaleMax - newScaleMin) * standardNormalization + newScaleMin;
 };
+
+export const random = (min: number, max: number) =>
+  Math.floor(Math.random() * (max - min)) + min;
 
 export const sample = <T>(arr: Array<T>) =>
   arr[Math.floor(Math.random() * arr.length)];

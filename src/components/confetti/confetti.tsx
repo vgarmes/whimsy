@@ -4,7 +4,7 @@ import Matter, { Mouse } from 'matter-js';
 import DEFAULT_SPRITES from './default-sprites';
 import { useEffect, useRef } from 'react';
 import usePhysicsEngine from '../../hooks/use-physics-engine.hook';
-import { normalize, sample, throttle } from './utils';
+import { normalize, sample, throttle } from '../../utils';
 
 const convertDegreesToRadians = (angle: number) => (angle * Math.PI) / 180;
 
