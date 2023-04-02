@@ -11,7 +11,7 @@ const FolderBottomSvg = styled.svg`
 `;
 
 export const FolderBottom: React.FC<{ size: number }> = ({ size }) => (
-  <FolderBottomSvg viewBox="0 0 379 261" fill="none">
+  <FolderBottomSvg width={size} viewBox="0 0 379 261" fill="none">
     <path
       d="M0 52C0 37.8579 0 30.7868 4.3934 26.3934C8.7868 22 15.8579 22 30 22H349C363.142 22 370.213 22 374.607 26.3934C379 30.7868 379 37.8579 379 52V231C379 245.142 379 252.213 374.607 256.607C370.213 261 363.142 261 349 261H30C15.8579 261 8.7868 261 4.3934 256.607C0 252.213 0 245.142 0 231V52Z"
       fill="#E8D07B"
